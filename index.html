@@ -1,72 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-
-        <link rel="stylesheet" href="css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Digital</title>
+     <!-- ----------------------------------------------------------------------- -->
         <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/eb1d35694d.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="images/favicon.ico">
         <!-- ----------------------------------------------------------------------- -->
-        <!-- Google Font -->
+        <script src="https://kit.fontawesome.com/eb1d35694d.js" crossorigin="anonymous"></script>
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- Google Fonts -->
         <!-- ----------------------------------------------------------------------- -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
             rel="stylesheet">
-        <!-- -------------------------------- Title -------------------------------- -->
+       <!-- ----------------------------------------------------------------------- -->
+        <!-- Bootstrap Scripts -->
+        <!-- ----------------------------------------------------------------------- -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- Jquery Scripts -->
+        <!-- ----------------------------------------------------------------------- -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+            <link rel="shortcut icon" href="favicon.ico" type="favicon onservice">
+        <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="header">
+    <div class="alert alert-info" role="alert">
+        <strong><i class="fas fa-hand-point-down icon"></i> Clique nos ícones para interagir <i class="fas fa-hand-point-down icon"></i></strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <video autoplay loop class="video-background" muted plays-inline src="videobg.mp4"></video>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="super_instagram.png" alt="logo onservice" class="logo-img">
+                <p class="onservice" >On Service</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="btn btn-primary btn-lg btn-block">
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5581987727136&text=Ol%C3%A1%20On%20Service,%20gostaria%20de%20saber%20mais%20sobre%20vocês.">
+                        <div class="button_label">WhatsApp</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="btn btn-primary btn-lg btn-block">
+                    <a href="https://www.instagram.com/onservicebrasil/">
+                       Instagram
+                    </a>
+                </div>
+            </div>
 
-        <title>Cartão Digital</title>
-    </head>
-    <body>
-        <div class="clique">
-            <img class="logo" src="images/super_instagram.png" alt="logo on service">
-            <h1><i class="fas fa-hand-point-down icon"></i> Clique nos ícones para interagir <i class="fas fa-hand-point-down icon"></i></h1>
-        </div>
-        <div class="container">
-            <div class="button_wrapper">
-                <button></button>
-               <a href="https://api.whatsapp.com/send?phone=5581987727136&text=Ol%C3%A1%20On%20Service,%20gostaria%20de%20saber%20mais%20sobre%20vocês."><div class="button_label">WhatsApp</div></a>
+            <div class="col-sm-12">
+                <div class="btn btn-primary btn-lg btn-block">
+                    <a href="https://www.facebook.com/onservicebrasil">
+                        <div class="button_label">Facebook</div>
+                    </a>
+                </div>
             </div>
-            <div class="button_wrapper">
-                <button></button>
-                <a href="https://www.instagram.com/onservicebrasil/"><div class="button_label">Instagram</div></a>   
+            <div class="col-sm-12">
+                <div class="btn btn-primary btn-lg btn-block">
+                    <a
+                        href="mailto:email.onservice@gmail.com?subject=Minha%20dúvida&body=Olá,%20tenho%20uma%20dúvida%20sobre%20a%20On%20service.">
+                        <div class="button_label">Email</div>
+                    </a>
+                </div>
             </div>
-            <div class="button_wrapper">
-                <button></button>
-               <a href="https://www.facebook.com/onservicebrasil"><div class="button_label">Facebook</div></a>
-            </div>
-            <div class="button_wrapper">
-                <button></button>
-               <a href="mailto:email.onservice@gmail.com?subject=Minha%20dúvida&body=Olá,%20tenho%20uma%20dúvida%20sobre%20a%20On%20service."><div class="button_label">Email</div></a>
-            </div>
-            <div class="button_wrapper">
-                <button></button>
-                <a href="https://onservicebrasil.github.io/portal"><div class="button_label">Site</div></a>
+            <div class="col-sm-12">
+                <div class="btn btn-primary btn-lg btn-block">
+                    <a href="https://onservicebrasil.github.io/portal">
+                        <div class="button_label">Site</div>
+                    </a>
+                </div>
             </div>
         </div>
-        <svg>
-            <defs>
-                <filter id="shake0">
-                    <feturbulence id="turbulence" basefrequency="0.001" numoctaves="3" seed="0"/>
-                    <fedisplacementmap id="displacement" in="SourceGraphic" in2="noise" scale="7"/>
-                </filter>
-                <filter id="shake1">
-                    <feturbulence id="turbulence" basefrequency="0.001" numoctaves="3" seed="1"/>
-                    <fedisplacementmap id="displacement" in="SourceGraphic" in2="noise" scale="5"/>
-                </filter>
-                <filter id="shake2">
-                    <feturbulence id="turbulence" basefrequency="0.001" numoctaves="3" seed="2"/>
-                    <fedisplacementmap id="displacement" in="SourceGraphic" in2="noise" scale="8"/>
-                </filter>
-                <filter id="shake3">
-                    <feturbulence id="turbulence" basefrequency="0.001" numoctaves="3" seed="3"/>
-                    <fedisplacementmap id="displacement" in="SourceGraphic" in2="noise" scale="7"/>
-                </filter>
-                <filter id="shake4">
-                    <feturbulence id="turbulence" basefrequency="0.001" numoctaves="3" seed="4"/>
-                    <fedisplacementmap id="displacement" in="SourceGraphic" in2="noise" scale="7"/>
-                </filter>
-            </defs>
-        </svg>
-    </body>
+    </div>
+
+</div>
+    
+</body>
 </html>

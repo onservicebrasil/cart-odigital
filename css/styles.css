@@ -1,92 +1,64 @@
-
-
 *{
-    box-sizing: border-box;
-    background: #000839;
+    margin:0;
+    padding: 0;
 }
-h1{
-    text-align: center;
+a{
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    size: 3.5rem;
-    line-height: 1.5;
-    animation: distort .5s linear infinite;
-  background-color: transparent;
 }
-.logo{
-    z-index: 1;
+a :hover{
+    color: #00a8cc;
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+
+.header{
+    background: rgba(0,0,100,0.4);
+    height: 100vh;
+}
+.video-background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.alert{
+    text-align: center;
+}
+.logo-img {
+    width: 10%;
     display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
-  
 }
-
-.container{
-    width: 200px;
-    height: 270px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);    
-}
-
-.button_wrapper{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 5px;
-
-}
-button, .button_label{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.button_label{
-    line-height: 50px;
+.onservice{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
     text-align: center;
-    font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:#fff;
-    background-color: #00a8cc;
 }
-button{
-    background: #00a8cc;
-    outline: none;
-    border: none;
-}
-.button_wrapper:hover{
-    transform: scale(1.8);
-    z-index: 100;
-    animation: distort .5s linear infinite;
-}
-.button_wrapper:hover button{
-    background: #00a8cc;
-}
-.button_wrapper:hover .button_label{
-   color: #fff;
+.col-sm-12{
+    text-align: center;
+    margin-top: 1%;
 }
 
-@keyframes distort {
-    0%{ filter: url("#shake0");}
-    25%{ filter: url("#shake1");}
-    50%{ filter: url("#shake2");}
-    75%{ filter: url("#shake3");}
-    100%{ filter: url("#shake4");}
 
-}
 
-@media (max-width: 1028px) {
-    .container{
-        top: 25%;
-        margin-top: 10%
+
+/* ------------------------------- MEDIA QUERY ------------------------------ */
+
+@media(min-aspect-ratio:16/9){
+    .video-background{
+        width: 100%;
+        height: auto;
     }
-    .clique{
-        margin-top: 150px;
-    }
-
 }
-
+@media(max-aspect-ratio:16/9){
+    .video-background{
+        width: auto;
+        height: 100%;
+    }
+}
